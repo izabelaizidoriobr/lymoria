@@ -1,0 +1,233 @@
+/* HERO SECTION */
+.hero-section {
+    padding-top: 180px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    /* necessário para conter as bolinhas */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    /* garante que o conteúdo fique acima das bolinhas */
+    z-index: 1;
+}
+
+.logo {
+    height: 50px;
+    margin-bottom: 24px;
+}
+
+/* Título */
+.hero-section h1 {
+    margin-bottom: 24px;
+}
+
+/* Descrição */
+.description {
+    margin-bottom: 40px;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+    transform-origin: center;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Ícone quadrado com seta */
+.icon-square {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #F7F4EF;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.material-icons {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+/* Botão preto */
+.btn-black {
+    background-color: #03070A;
+    color: #F7F4EF;
+}
+
+.btn-black .icon-square {
+    color: #03070A;
+}
+
+.btn-black:hover {
+    background-color: #03070A;
+}
+
+/* Botão vermelho */
+.btn-red {
+    background-color: #B71718;
+    color: #F7F4EF;
+}
+
+.btn-red .icon-square {
+    color: #B71718;
+}
+
+.btn-red:hover {
+    background-color: #650705;
+}
+
+/* Animação na seta */
+.btn:hover .icon-square {
+    transform: translateX(3px);
+}
+
+/* DECORAÇÃO */
+.loader-row {
+    padding-top: 80px;
+    display: grid;
+    grid-template-rows: repeat(3, 44px);
+    grid-auto-flow: column;
+    grid-column: 54px;
+    gap: 32px;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Célula animada */
+.cell {
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    background-color: transparent;
+    animation: ripple 2s ease-in-out infinite;
+    --cell-color: #c31414;
+}
+
+/* Delays para efeito de onda */
+.d-0 {
+    animation-delay: 0s;
+}
+
+.d-1 {
+    animation-delay: 0.15s;
+}
+
+.d-2 {
+    animation-delay: 0.3s;
+}
+
+.d-3 {
+    animation-delay: 0.45s;
+}
+
+.d-4 {
+    animation-delay: 0.6s;
+}
+
+/* Animação pulsante */
+@keyframes ripple {
+
+    0%,
+    100% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: var(--cell-color);
+    }
+}
+
+
+/* RESPONSIVIDADE */
+
+/* Tablet (<= 991px) */
+@media (max-width: 991px) {
+    .hero-section {
+        padding-top: 120px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        gap: 16px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+    }
+
+}
+
+/* Celular (<= 600px) */
+@media (max-width: 600px) {
+    .hero-section {
+        padding-top: 100px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .description {
+        margin-bottom: 32px;
+    }
+
+    .buttons a {
+        font-size: 0.95rem;
+    }
+
+    .loader-row {
+        grid-template-columns: repeat(5, 44px);
+        /* 5 colunas fixas */
+        grid-template-rows: repeat(3, 44px);
+        /* mantém as 3 fileiras */
+        grid-auto-flow: unset;
+        grid-auto-columns: unset;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    /* Esconde todas as células extras depois da 15ª (5 col x 3 rows) */
+    .loader-row .cell:nth-child(n+16) {
+        display: none;
+    }
+}

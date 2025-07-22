@@ -1,0 +1,95 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 24px 120px;
+    background: transparent;
+}
+
+.nav-btn {
+    background-color: #03070A;
+    border: none;
+    border-radius: 999px;
+    padding: 0.5rem 1.8rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #202020;
+}
+
+.nav-left {
+    position: relative;
+}
+
+.menu-popup {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    background: #202020;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    width: 240px;
+}
+
+.menu-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-popup li {
+    margin: 14px 0;
+}
+
+.menu-popup a {
+    text-decoration: none;
+}
+
+.menu-popup a:hover {
+    color: #B71718;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 24px 32px;
+    }
+
+    .nav-left {
+        order: 2;
+        /* menu à direita */
+    }
+
+    .logo {
+        order: 1;
+        /* logo à esquerda */
+    }
+
+    .contato-btn {
+        display: none;
+        /* esconde o botão 'Contato' no topo */
+    }
+
+    .menu-popup {
+        left: auto;
+        right: 0;
+        /* alinha o menu popup à direita */
+    }
+}

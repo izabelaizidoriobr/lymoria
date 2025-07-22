@@ -1,0 +1,11 @@
+/* Utilidades */
+@import"./utilidades/cores.css";
+@import"./utilidades/fonts.css";
+
+/* GLOBAL */
+@import"./global/global.css";
+@import"./global/navbar.css";
+
+/* HOME */
+@import"./home/hero.css";
+@import "./home/servicos.css";
