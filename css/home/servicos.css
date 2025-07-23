@@ -4,24 +4,28 @@
     padding-right: 120px;
 }
 
+.servicos-header p {
+    margin-top: 24px;
+}
+
 
 /* Cards */
 .servicos-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
-    justify-content: center;
-    margin-bottom: 48px;
+    justify-items: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .servico-card {
     flex: 1 1 280px;
-    max-width: 320px;
+    max-width: 440px;
     padding: 32px 24px;
     border-radius: 12px;
     text-align: left;
     text-decoration: none;
-    color: #fff;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -32,36 +36,69 @@
     transform: translateY(-5px);
 }
 
-.servico-card h3 {
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.servico-card p {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
 .servico-card img {
+    margin-top: 24px;
     width: 100%;
-    height: auto;
-    border-radius: 40px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 100px;
 }
 
 /* Cores */
 .servico-card.red {
-    background-color: #d11c1c;
+    background-color: #C33031;
 }
 
 .servico-card.dark {
-    background-color: #0f0f0f;
+    background-color: #1E1E1E;
 }
 
 .servico-card.wine {
-    background-color: #8a0f0f;
+    background-color: #790007;
 }
 
-/* Botão final */
-.servicos-btn {
-    margin-top: 24px;
+.btn_bc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 991px) {
+    .servicos-section {
+        padding-top: 120px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    .servicos-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .servicos-section {
+        padding-top: 80px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    .servicos-cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 44px;
+    }
+
+    .servico-card {
+        flex: 1 1 280px;
+        max-width: 380px;
+    }
+
+    .servico-card img {
+        margin-top: 16px;
+        height: 120px;
+    }
 }

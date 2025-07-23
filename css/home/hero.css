@@ -11,6 +11,7 @@
     max-width: 900px;
     margin: 0 auto;
     position: relative;
+    justify-items: center;
     /* garante que o conteúdo fique acima das bolinhas */
     z-index: 1;
 }
@@ -27,6 +28,7 @@
 
 /* Descrição */
 .description {
+    width: 600px;
     margin-bottom: 40px;
 }
 
@@ -195,6 +197,21 @@
         padding: 10px 18px;
     }
 
+    .loader-row {
+        grid-template-columns: repeat(10, 44px);
+        /* 5 colunas fixas */
+        grid-template-rows: repeat(6, 44px);
+        /* mantém as 3 fileiras */
+        grid-auto-flow: unset;
+        grid-auto-columns: unset;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    /* Esconde todas as células extras depois da 15ª (5 col x 3 rows) */
+    .loader-row .cell:nth-child(n+31) {
+        display: none;
+    }
 }
 
 /* Celular (<= 600px) */
@@ -208,6 +225,7 @@
     }
 
     .description {
+        width: 380px;
         margin-bottom: 32px;
     }
 
@@ -216,7 +234,7 @@
     }
 
     .loader-row {
-        grid-template-columns: repeat(5, 44px);
+        grid-template-columns: repeat(6, 44px);
         /* 5 colunas fixas */
         grid-template-rows: repeat(3, 44px);
         /* mantém as 3 fileiras */
@@ -227,7 +245,7 @@
     }
 
     /* Esconde todas as células extras depois da 15ª (5 col x 3 rows) */
-    .loader-row .cell:nth-child(n+16) {
+    .loader-row .cell:nth-child(n+19) {
         display: none;
     }
 }
