@@ -94,4 +94,8 @@
         grid-template-columns: 1fr;
         gap: 44px;
     }
+
+    .btn-t2 {
+        gap: 16px;
+    }
 }
