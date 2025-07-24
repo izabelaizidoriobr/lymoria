@@ -98,4 +98,8 @@
     .btn-t2 {
         gap: 16px;
     }
+
+    .buttons a {
+        font-size: 0.95rem;
+    }
 }

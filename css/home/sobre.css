@@ -92,8 +92,8 @@
 /* Celular: até 600px */
 @media (max-width: 600px) {
     .sobre-section {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 44px;
+        padding-right: 44px;
         padding-top: 80px;
     }
 
@@ -116,5 +116,9 @@
     .sobre-desc img {
         height: 200px;
         border-radius: 150px;
+    }
+
+    .sobre-conatiner {
+        margin-top: 24px;
     }
 }

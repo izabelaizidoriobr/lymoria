@@ -1,0 +1,48 @@
+.contato-section {
+    padding-top: 120px;
+    place-items: center;
+    text-align: center;
+}
+
+.contato-card {
+    justify-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 1300px;
+    border: 2px solid #B71718;
+    border-radius: 12px;
+}
+
+.btn-ct {
+    margin-top: 44px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 991px) {
+    .contato-card {
+        width: 90%;
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contato-section {
+        padding-top: 80px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    .contato-card {
+        width: 95%;
+        padding: 40px 16px;
+    }
+
+    .btn-ct {
+        margin-top: 32px;
+    }
+
+    .contato-texto h2 {
+        font-size: 1.5rem;
+    }
+}
