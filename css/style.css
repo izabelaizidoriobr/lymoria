@@ -1,10 +1,11 @@
 /* Utilidades */
-@import"./utilidades/cores.css";
-@import"./utilidades/fonts.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/fonts.css";
 
 /* GLOBAL */
-@import"./global/global.css";
-@import"./global/navbar.css";
+@import "./global/global.css";
+@import "./global/navbar.css";
+@import "./global/footer.css";
 
 /* HOME */
 @import"./home/hero.css";

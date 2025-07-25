@@ -34,15 +34,10 @@
     }
 
     .contato-card {
-        width: 95%;
-        padding: 40px 16px;
+        border: none;
     }
 
     .btn-ct {
         margin-top: 32px;
-    }
-
-    .contato-texto h2 {
-        font-size: 1.5rem;
     }
 }
