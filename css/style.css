@@ -14,3 +14,6 @@
 @import "./home/cta.css";
 @import "./home/sobre.css";
 @import "./home/contato.css";
+
+/* PROJETOS */
+@import "./projetos/projetosgeral.css";
