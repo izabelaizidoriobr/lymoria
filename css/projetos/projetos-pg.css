@@ -171,6 +171,13 @@
         padding-top: 32px;
     }
 
+    .cont-p2,
+    .cont-p3,
+    .cont-p4,
+    .cont-p5 {
+        padding-top: 44px;
+    }
+
     .contedo-projetos-desc {
         padding-top: 80px;
         padding-left: 44px;
