@@ -1,5 +1,6 @@
 .footer-section {
     padding-top: 120px;
+    padding-bottom: 24px;
 }
 
 .line-contft {
@@ -73,14 +74,6 @@
     color: #B71718;
 }
 
-.footer-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    font-family: "League Spartan", sans-serif;
-    font-size: 200px;
-}
 
 /* RESPONSIVO */
 

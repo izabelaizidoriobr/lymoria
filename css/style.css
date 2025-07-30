@@ -7,6 +7,9 @@
 @import "./global/navbar.css";
 @import "./global/footer.css";
 
+/* CONTATO*/
+@import "./contato/contatopag.css";
+
 /* HOME */
 @import"./home/hero.css";
 @import "./home/servicos.css";

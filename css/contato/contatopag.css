@@ -1,0 +1,151 @@
+.contato-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+}
+
+.contato-box {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/* Lado esquerdo */
+.contato-info {
+    flex: 1;
+    padding: 40px 30px;
+    min-width: 300px;
+}
+
+.contato-info .subtitulo {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.contato-info h1 {
+    margin-bottom: 24px;
+}
+
+.contato-info .descricao {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contato-dados p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contato-dados i {
+    margin-right: 8px;
+    color: #e60000;
+}
+
+.contato-dados a {
+    color: #181818;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contato-dados a:hover {
+    color: #e60000;
+}
+
+.redes {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.redes a {
+    font-size: 20px;
+    color: #181818;
+    transition: color 0.3s;
+}
+
+.redes a:hover {
+    color: #e60000;
+}
+
+/* Formulário */
+.form-box {
+    flex: 1;
+    background: #fff;
+    padding: 40px 30px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+.duplo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.duplo input {
+    flex: 1;
+}
+
+form button {
+    padding: 14px;
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #c00000;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contato-wrapper {
+        padding-top: 120px;
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    .contato-box {
+        flex-direction: column;
+    }
+
+    .contato-info,
+    .form-box {
+        padding: 30px 20px;
+    }
+
+    .contato-info h1 {
+        font-size: 28px;
+    }
+}
