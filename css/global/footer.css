@@ -79,7 +79,7 @@
     align-items: center;
     margin-top: 80px;
     font-family: "League Spartan", sans-serif;
-    font-size: 240px;
+    font-size: 200px;
 }
 
 /* RESPONSIVO */
@@ -135,7 +135,7 @@
     }
 
     .footer-brand {
-        font-size: 80px;
+        font-size: 64px;
         text-align: center;
     }
 }
